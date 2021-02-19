@@ -4,6 +4,7 @@ btpd
 cloc
 cmake
 coreutils
+ffmpeg
 go
 htop
 icdiff

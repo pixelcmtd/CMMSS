@@ -17,5 +17,3 @@ sudo chown -R $USER /opt/local
 brew install $(cat packages.brew)
 port install $(cat packages.brew)
 pip3 install --user $(cat packages.pip3)
-
-command -v ffmpeg || ./ffmpeg.sh
