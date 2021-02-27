@@ -17,3 +17,10 @@ sudo chown -R $USER /opt/local
 brew install $(cat packages.brew)
 sudo port install $(cat packages.brew)
 pip3 install --user $(cat packages.pip3)
+
+#
+# configuration
+#
+
+cp -f zshrc "$HOME/.zshrc"
+cp -f vimrc "$HOME/.vimrc"
