@@ -19,20 +19,6 @@ zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-dir
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $HOME/.cache/oh-my-zsh-cache
 
-function omz_history {
-  local clear list
-  zparseopts -E c=clear l=list
-
-  if [[ -n "$clear" ]]; then
-    echo -n >| "$HISTFILE"
-    echo >&2 History file deleted. Reload the session to see its effects.
-  elif [[ -n "$list" ]]; then
-    builtin fc -E "$@"
-  else
-    [[ ${@[-1]-} = *[0-9]* ]] && builtin fc -l -E "$@" || builtin fc -l -E "$@" 1
-  fi
-}
-
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
 SAVEHIST=10000
@@ -47,19 +33,13 @@ setopt share_history
 
 bindkey -e
 # Edit the current command line in $EDITOR
-autoload -U edit-command-line
-zle -N edit-command-line
-bindkey '\C-x\C-e' edit-command-line
 bindkey "^[m" copy-prev-shell-word                    # [Esc-m] - copy and paste previous word (for use in cp/mv)
-bindkey "${terminfo[kcbt]}" reverse-menu-complete
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 autoload -U up-line-or-beginning-search
 zle -N up-line-or-beginning-search
-bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N down-line-or-beginning-search
-bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 
 autoload -Uz is-at-least
 autoload -Uz bracketed-paste-magic
@@ -161,17 +141,18 @@ Options:
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export VISUAL=$EDITOR
+export VISUAL='emacsclient'
+export VEDITOR='emacsclient -n'
 export PAGER='less'
 export ARCHFLAGS="-arch x86_64"
 export TERM=xterm-256color
 
 zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"|cat - $@|gzip -dc)
-alias v="$EDITOR"
+alias v="$VEDITOR"
 alias V="sudo $EDITOR"
 alias mv="mv -i"
-e()    ($EDITOR $(ls | fzf))
-E()    (sudo $EDITOR $(ls | fzf))
+e()    ($VISUAL $(ls | fzf))
+E()    (sudo $VISUAL $(ls | fzf))
 uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 sd()   (sudo shutdown $@ now)
 mnt() {
@@ -180,7 +161,7 @@ mnt() {
         sudo chown -R "$USER:$USER" "$HOME/mnt"
 }
 alias umnt='sudo umount ~/mnt'
-alias m='make'
+alias m='make -j$(nproc)'
 alias mi='sudo make install'
 alias smi='sm install'
 alias o='open'
@@ -196,14 +177,12 @@ alias ls='ls -G'
 
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
 
-alias history='omz_history'
-
 alias e64=encode64
 alias d64=decode64
 
-alias zsh-theme="$EDITOR $HOME/.zsh-theme"
-alias zshrc="$EDITOR $HOME/.zshrc"
-alias vimrc="$EDITOR $HOME/.vimrc"
+alias zsh-theme="$VEDITOR $HOME/.zsh-theme"
+alias zshrc="$VEDITOR $HOME/.zshrc"
+alias vimrc="$VEDITOR $HOME/.vimrc"
 alias help='man'
 
 alias -g H='| head'
@@ -230,13 +209,25 @@ alias gs='git status'
 
 alias dstat='ifstat -i en0'
 
+alias rr='curl -s -L http://bit.ly/10hA8iC | bash'
+
+alias tmp='pushd ; cd $(mktemp -d)'
+
+alias dl='curl -LO'
+
+alias update='topgrade'
+
 alias x86='arch -arch x86_64'
 alias arm='arch -arch arm64'
 
+alias gcp='~/.bin/gcp -g'
+alias gmv='~/.bin/gmv -g'
+
 archof() (file $(which $@))
 
-fd() (find . -iname "*$@*")
-
+export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.9/bin"
 export PATH="$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.8/bin"
 export PATH="$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin"
@@ -247,7 +238,13 @@ export PATH="$PATH:$HOME/Library/Python/2.7/bin"
 export PATH="$PATH:$HOME/.bin"
 export PATH="$PATH:$HOME/vcpkg"
 export PATH="$PATH:$HOME/flutter/bin:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.wasmer/bin:$HOME/.wasmer/globals/wapm_packages/.bin"
+export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
+export PATH="$PATH:/Applications/CraftOS-PC.app/Contents/MacOS"
+export PATH="$PATH:$HOME/.emacs.d/bin/"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/qemu/build"
 
 command -v pfetch >/dev/null && pfetch
 
