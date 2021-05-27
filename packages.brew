@@ -200,5 +200,5 @@ homebrew/cask/tor-browser
 homebrew/cask/utm
 homebrew/cask/vlc
 homebrew/cask/vscodium
-homebrew/cask/wine-staging
+wine-staging
 homebrew/cask/xquartz
