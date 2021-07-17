@@ -162,10 +162,9 @@ mnt() {
 }
 alias umnt='sudo umount ~/mnt'
 alias m='make -j$(nproc)'
-alias mi='sudo make install'
-alias smi='sm install'
+alias mi='sudo make -j$(nproc) install'
+alias mt='make -j$(nproc) test'
 alias o='open'
-alias i='sudo port install'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -182,7 +181,7 @@ alias d64=decode64
 
 alias zsh-theme="$VEDITOR $HOME/.zsh-theme"
 alias zshrc="$VEDITOR $HOME/.zshrc"
-alias vimrc="$VEDITOR $HOME/.vimrc"
+alias vimrc="$VISUAL $HOME/.vimrc"
 alias help='man'
 
 alias -g H='| head'
@@ -215,13 +214,14 @@ alias tmp='pushd ; cd $(mktemp -d)'
 
 alias dl='curl -LO'
 
-alias update='topgrade'
-
 alias x86='arch -arch x86_64'
 alias arm='arch -arch arm64'
 
 alias gcp='~/.bin/gcp -g'
 alias gmv='~/.bin/gmv -g'
+
+ght() (git tag $@ && git push origin --tags)
+glcp() (git pull && git commit $@ && git push)
 
 archof() (file $(which $@))
 
@@ -244,7 +244,13 @@ export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
 export PATH="$PATH:/Applications/CraftOS-PC.app/Contents/MacOS"
 export PATH="$PATH:$HOME/.emacs.d/bin/"
 export PATH="$PATH:$HOME/.pub-cache/bin"
-export PATH="$PATH:$HOME/qemu/build"
+export PATH="$PATH:/opt/local/bin"
+export PATH="$PATH:$HOME/fvm/versions/stable/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
+export GPG_TTY=$(tty)
+
+export CARP_DIR=~/Carp/
 
 command -v pfetch >/dev/null && pfetch
 

@@ -21,10 +21,7 @@ set notimeout ttimeout ttimeoutlen=5
 set noshowmode
 let g:lightline = {'colorscheme': 'powerline'}
 
-autocmd BufWritePost slides !sent %
-autocmd BufWritePost slides.md !md2pdf % $(echo % | sed s/.md/.pdf/) && mupdf $(echo % | sed s/.md/.pdf/)
 autocmd BufWritePost .vimrc source %
-autocmd BufWritePost sources.list !sudo apt update
 
 map <Leader>c "+y
 map <Leader>v "+P
@@ -43,10 +40,5 @@ if(filereadable("Smfile"))
         map <Leader>i :w<CR>:!sm install<CR>
 endif
 
-autocmd filetype html map <Leader>p i<p><Enter></p><Esc>O
-
 " ZERM setup
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
-" ZERM source ("Quelle")
-" TODO: remove
-autocmd filetype html map <Leader>q i<sup><a href="url">[n]</a></sup><Esc>
