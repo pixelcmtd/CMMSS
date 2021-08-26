@@ -141,8 +141,8 @@ Options:
 
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export VISUAL='emacsclient'
-export VEDITOR='emacsclient -n'
+export VISUAL="emacsclient --alternate-editor $EDITOR"
+export VEDITOR="emacsclient --alternate-editor $EDITOR -n"
 export PAGER='less'
 export ARCHFLAGS="-arch x86_64"
 export TERM=xterm-256color
@@ -212,8 +212,6 @@ alias rr='curl -s -L http://bit.ly/10hA8iC | bash'
 
 alias tmp='pushd ; cd $(mktemp -d)'
 
-alias dl='curl -LO'
-
 alias x86='arch -arch x86_64'
 alias arm='arch -arch arm64'
 
@@ -247,6 +245,9 @@ export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/opt/local/bin"
 export PATH="$PATH:$HOME/fvm/versions/stable/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/tldrgal"
+export PATH="$PATH:/Applications/OpenSCAD.app/Contents/MacOS"
+export PATH="$PATH:/Applications/Firefox.app/Contents/MacOS"
 
 export GPG_TTY=$(tty)
 
