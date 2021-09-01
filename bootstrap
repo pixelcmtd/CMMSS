@@ -1,6 +1,6 @@
 #!/bin/sh
-curl -L https://github.com/chrissxYT/tools/raw/master/bootstrap | sh
+curl -L https://github.com/pixelcmtd/tools/raw/master/bootstrap | sh
 cd
-git clone https://github.com/chrissxYT/CMMSS.git
+git clone https://github.com/pixelcmtd/CMMSS.git
 cd CMMSS
 ./install.sh
