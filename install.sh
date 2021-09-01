@@ -26,3 +26,4 @@ pip3 install --user $(cat packages.pip3)
 
 cp -f zshrc "$HOME/.zshrc"
 cp -f vimrc "$HOME/.vimrc"
+cp -f editorconfig "$HOME/.editorconfig"
