@@ -1,0 +1,51 @@
+#!/bin/zsh
+
+export LANG=C.UTF-8
+export EDITOR=vim
+export VISUAL="emacsclient --alternate-editor $EDITOR"
+export VEDITOR="emacsclient --alternate-editor $EDITOR -n"
+export PAGER=less
+export TERM=xterm-256color
+
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/ccache/libexec:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/3.10/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin"
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
+export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+export PATH="$PATH:$HOME/vcpkg"
+export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/.wasmer/bin"
+export PATH="$PATH:$HOME/.wasmer/globals/wapm_packages/.bin"
+export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
+export PATH="$PATH:/Applications/CraftOS-PC.app/Contents/MacOS"
+export PATH="$PATH:$HOME/.emacs.d/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:/opt/local/bin"
+export PATH="$PATH:$HOME/fvm/versions/stable/bin"
+export PATH="$PATH:$HOME/tldrgal"
+export PATH="$PATH:$HOME/perl5/bin"
+
+for d in /Applications/* ; do
+        export PATH="$PATH:$d/Contents/MacOS"
+done
+
+export MACOSX_DEPLOYMENT_TARGET=12.0
+export CC=clang
+export CFLAGS="-Ofast -mcpu=native -mtune=native -march=native -I/opt/homebrew/include -Wall -Wextra"
+export CXX=clang++
+export CXXFLAGS="$CFLAGS"
+export LD=$CC
+export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -flto"
+
+export GPG_TTY=$(tty)
+
+export CARP_DIR=~/Carp/
