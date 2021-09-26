@@ -168,16 +168,9 @@ zlibd() (printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"|cat - $@|gzip -dc)
 alias v="$VEDITOR"
 alias V="sudo $EDITOR"
 alias mv="mv -i"
-e()    ($VISUAL $(ls | fzf))
-E()    (sudo $VISUAL $(ls | fzf))
+e()    ($VEDITOR $(ls | fzf))
+E()    (sudo $EDITOR $(ls | fzf))
 uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
-sd()   (sudo shutdown $@ now)
-mnt() {
-        mkdir -p "$HOME/mnt"
-        sudo mount "$1" "$HOME/mnt"
-        sudo chown -R "$USER:$USER" "$HOME/mnt"
-}
-alias umnt='sudo umount ~/mnt'
 alias m='make -j$(nproc)'
 alias mi='sudo make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
@@ -186,10 +179,10 @@ alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
-alias l='ls -lFah'
-alias ll='ls -lh'
-alias la='ls -lAFh'
-alias ls='ls -G'
+alias l='ls --color=auto -lFah'
+alias ll='ls --color=auto -lh'
+alias la='ls --color=auto -lAFh'
+alias ls='ls --color=auto -G'
 
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
 
@@ -211,6 +204,7 @@ alias -g NUL='> /dev/null 2>&1'
 alias g='git'
 alias ga='git add -v'
 alias gaa='git add -vA'
+alias gap='git add -vp'
 alias gc='git commit -v'
 alias gca='git commit -va'
 alias gcam='git commit -vam'
@@ -218,10 +212,13 @@ alias gcsm='git commit -vsm'
 alias gcl='git clone --recurse-submodules -v'
 alias gcm='git commit -vm'
 alias gd='git diff'
+alias gid='git icdiff'
 alias gi='git init'
 alias gl='git pull'
 alias gp='git push -v'
 alias gs='git status'
+
+alias diff='git diff --no-index'
 
 alias dstat='ifstat -i en0'
 
@@ -234,6 +231,7 @@ alias arm='arch -arch arm64'
 
 ght() (git tag $@ && git push origin --tags)
 glcp() (git pull && git commit $@ && git push)
+ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
 
 archof() (file $(which $@))
 
