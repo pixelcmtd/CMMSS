@@ -7,13 +7,12 @@ indent_size = tab
 indent_style = space
 insert_final_newline = true
 tab_width = 8
-trim_trailing_whitespace = true
 
 [Makefile]
 indent_style = tab
 
-[*.{cl,lisp,clj,carp,dart}]
+[*.{cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad}]
 tab_width = 2
 
-[*.{htm,html,css,js,py}]
+[*.{htm,html,css,js,ts,py,rs}]
 tab_width = 4
