@@ -40,5 +40,22 @@ if(filereadable("Smfile"))
         map <Leader>i :w<CR>:!sm install<CR>
 endif
 
+if(filereadable("Cargo.toml"))
+        map <Leader>t :w<CR>:!cargo test<CR>
+        map <Leader>x :w<CR>:!cargo build<CR>
+        map <Leader>r :w<CR>:!cargo run<CR>
+endif
+
+if(filereadable("Justfile"))
+        map <Leader>t :w<CR>:!just test<CR>
+        map <Leader>x :w<CR>:!just build<CR>
+        map <Leader>r :w<CR>:!just run<CR>
+        map <Leader>i :w<CR>:!just install<CR>
+endif
+
 " ZERM setup
 map <Leader>z :set spell<CR>:set colorcolumn=0<CR><C-L>
+
+map <Leader>T :exe "Tldr" input("Page: ")<CR>
+
+map <Leader>d :ALEDetail<CR>
