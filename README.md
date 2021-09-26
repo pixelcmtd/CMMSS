@@ -2,9 +2,12 @@
 chrissx Media macOS Setup Scripts
 
 ## How to use
-* Open the App Store
-* Install XCode
+* Install [iTerm](https://iterm2.com/downloads/stable/latest)
+* Install [XCode](https://apps.apple.com/de/app/xcode/id497799835) from the
+App Store (`open -a "App Store" https://apps.apple.com/de/app/xcode/id497799835`)
 * Run `xcode-select --install`
 * Click `Install` and wait until it's finished
 * Run `sudo xcodebuild -license` and agree to the license
-* Run `curl -L https://github.com/chrissxYT/CMMSS/raw/master/bootstrap | sh`
+* Run `curl -L https://github.com/pixelcmtd/CMMSS/raw/master/bootstrap | sh`
+* iTerm Preferences: General -> Preferences ->
+`Load preferences from a custom folder or URL` -> `/Users/your_name/CMMSS`
