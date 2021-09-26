@@ -55,16 +55,38 @@ setopt auto_cd
 setopt multios
 setopt prompt_subst
 
-_plz_complete_zsh() {
-    local args=("${words[@]:1:$CURRENT}")
-    local IFS=$'\n'
-    local completions=($(GO_FLAGS_COMPLETION=1 ${words[1]} -p -v 0 --noupdate "${args[@]}"))
-    for completion in $completions; do
-	compadd $completion
-    done
+_tldr_get_files() {
+        local ret
+        local files="$(fd '.*\.md' $HOME/.cache/tldr/pages/$1 -x echo {/.})"
+
+        IFS=$'\n\t'
+        for f in $files; do
+                echo $f
+        done
 }
 
-compdef _plz_complete_zsh plz
+_tldr_complete() {
+        local word="$1"
+        local cmpl=""
+        if [ "$word" = "-" ]; then
+                cmpl=$(echo $'\n-v\n-h\n-u\n-c\n-p\n-r' | sort)
+        elif [ "$word" = "--" ]; then
+                cmpl=$(echo $'--version\n--help\n--update\n--clear-cache\n--platform\n--render' | sort)
+        else
+                if [ -d "$HOME/.cache/tldr/pages" ]; then
+                        local platform="$(uname)"
+                        cmpl="$(_tldr_get_files common | sort | uniq)"
+                        if [ "$platform" = "Darwin" ]; then
+                                cmpl="${cmpl}$(_tldr_get_files osx | sort | uniq)"
+                        elif [ "$platform" = "Linux" ]; then
+                                cmpl="${cmpl}$(_tldr_get_files linux | sort | uniq)"
+                        fi
+                fi
+        fi
+        reply=( "${(ps:\n:)cmpl}" )
+}
+
+compctl -K _tldr_complete tldr
 
 function colored() {
 	env     LESS_TERMCAP_mb=$(printf "\e[1;31m") \
