@@ -1,11 +1,11 @@
-#!/bin/zsh
-
-export LANG=C.UTF-8
+export LANG=C
 export EDITOR=vim
-export VISUAL="emacsclient --alternate-editor $EDITOR"
-export VEDITOR="emacsclient --alternate-editor $EDITOR -n"
+export VISUAL=$EDITOR
+export VEDITOR=$EDITOR
 export PAGER=less
 export TERM=xterm-256color
+export OPENER=open
+export LS_COLORS=
 
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/opt/ccache/libexec:$PATH"
@@ -40,7 +40,7 @@ done
 
 export MACOSX_DEPLOYMENT_TARGET=12.0
 export CC=clang
-export CFLAGS="-Ofast -mcpu=native -mtune=native -march=native -I/opt/homebrew/include -Wall -Wextra"
+export CFLAGS="-Ofast -mcpu=native -mtune=native -I/opt/homebrew/include -Wall -Wextra"
 export CXX=clang++
 export CXXFLAGS="$CFLAGS"
 export LD=$CC
