@@ -46,6 +46,8 @@ export CXXFLAGS="$CFLAGS"
 export LD=$CC
 export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -flto"
 
+export PREFIX="$HOME/.local"
+
 export GPG_TTY=$(tty)
 
 export CARP_DIR=~/Carp/
