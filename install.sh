@@ -18,6 +18,7 @@ command -v port >/dev/null || netpkg "$MACPORTS"
 brew install $(cat packages.brew)
 sudo port install $(cat packages.port)
 pip3 install --user $(cat packages.pip3)
+cargo install $(cat packages.cargo)
 
 #
 # configuration
