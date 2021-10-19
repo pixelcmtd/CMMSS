@@ -1,5 +1,5 @@
 # vim:ft=zsh ts=2 sw=2 sts=2
-# pixel's Theme - inspired by https://gist.github.com/3712874
+# pixel's Theme - based on https://gist.github.com/3712874
 
 CURRENT_BG=NONE
 CURRENT_FG=black
@@ -37,7 +37,6 @@ prompt_end() {
 }
 
 prompt_git() {
-  [[ "$(git config --get oh-my-zsh.hide-status 2>/dev/null)" = 1 ]] && return
   () {
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
     #PL_BRANCH_CHAR=$''         #  looks like Ĺ in many terms
@@ -78,12 +77,10 @@ prompt_git() {
 
 # Status:
 # - was there an error
-# - am I root
 # - are there background jobs?
 prompt_status() {
   local -a symbols
   [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}✘"
-  [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
@@ -91,8 +88,10 @@ prompt_status() {
 build_prompt() {
   RETVAL=$?
   prompt_status
-  prompt_segment black default "%n"
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment black '#FFB0C0' '%D{%a %d. %b %H:%M}'
+  prompt_segment '#60D0FF' $CURRENT_FG '%y'
+  prompt_segment '#C02020' $CURRENT_FG "%n"
+  prompt_segment '#8020F0' $CURRENT_FG '%1~'
   prompt_git
   prompt_end
 }
