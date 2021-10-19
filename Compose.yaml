@@ -337,89 +337,6 @@
 "_r": "ᵣ"  # LATIN SUBSCRIPT SMALL LETTER R
 "_u": "ᵤ"  # LATIN SUBSCRIPT SMALL LETTER U
 "_v": "ᵥ"  # LATIN SUBSCRIPT SMALL LETTER V
-"_*b": "ᵦ"  # GREEK SUBSCRIPT SMALL LETTER BETA
-"_*g": "ᵧ"  # GREEK SUBSCRIPT SMALL LETTER GAMMA
-"_*r": "ᵨ"  # GREEK SUBSCRIPT SMALL LETTER RHO
-"_*f": "ᵩ"  # GREEK SUBSCRIPT SMALL LETTER PHI
-"_*x": "ᵪ"  # GREEK SUBSCRIPT SMALL LETTER CHI
-"*a": "α"  # GREEK SMALL LETTER ALPHA
-"*b": "β"  # GREEK SMALL LETTER BETA
-"*c": "ψ"  # GREEK SMALL LETTER PSI
-"*d": "δ"  # GREEK SMALL LETTER DELTA
-"*e": "ε"  # GREEK SMALL LETTER EPSILON
-"*f": "φ"  # GREEK SMALL LETTER PHI
-"*g": "γ"  # GREEK SMALL LETTER GAMMA
-"*h": "η"  # GREEK SMALL LETTER ΕΤΑ
-"*i": "ι"  # GREEK SMALL LETTER ΙΟΤΑ
-"*j": "ξ"  # GREEK SMALL LETTER XI
-"*k": "κ"  # GREEK SMALL LETTER KAPPA
-"*l": "λ"  # GREEK SMALL LETTER LAMBDA
-"*m": "μ"  # GREEK SMALL LETTER MU
-"*n": "ν"  # GREEK SMALL LETTER NU
-"*o": "ο"  # GREEK SMALL LETTER OMICRON
-"*p": "π"  # GREEK SMALL LETTER PI
-"*.?": ";"  # GREEK QUESTION MARK
-"*r": "ρ"  # GREEK SMALL LETTER RHO
-"*s": "σ"  # GREEK SMALL LETTER SIGMA
-"*t": "τ"  # GREEK SMALL LETTER TAU
-"*u": "θ"  # GREEK SMALL LETTER THETA
-"*v": "ω"  # GREEK SMALL LETTER OMEGA
-"*w": "ς"  # GREEK SMALL LETTER FINAL SIGMA
-"*x": "χ"  # GREEK SMALL LETTER CHI
-"*y": "υ"  # GREEK SMALL LETTER UPSILON
-"*z": "ζ"  # GREEK SMALL LETTER ZETA
-"*A": "Α"  # GREEK CAPITAL LETTER ALPHA
-"*B": "Β"  # GREEK CAPITAL LETTER BETA
-"*C": "Ψ"  # GREEK CAPITAL LETTER PSI
-"*D": "Δ"  # GREEK CAPITAL LETTER DELTA
-"*E": "Ε"  # GREEK CAPITAL LETTER EPSILON
-"*F": "Φ"  # GREEK CAPITAL LETTER PHI
-"*G": "Γ"  # GREEK CAPITAL LETTER GAMMA
-"*H": "Η"  # GREEK CAPITAL LETTER ΕΤΑ
-"*I": "Ι"  # GREEK CAPITAL LETTER ΙΟΤΑ
-"*J": "Ξ"  # GREEK CAPITAL LETTER XI
-"*K": "Κ"  # GREEK CAPITAL LETTER KAPPA
-"*L": "Λ"  # GREEK CAPITAL LETTER LAMBDA
-"*M": "Μ"  # GREEK CAPITAL LETTER MU
-"*N": "Ν"  # GREEK CAPITAL LETTER NU
-"*O": "Ο"  # GREEK CAPITAL LETTER OMICRON
-"*P": "Π"  # GREEK CAPITAL LETTER PI
-"*R": "Ρ"  # GREEK CAPITAL LETTER RHO
-"*S": "Σ"  # GREEK CAPITAL LETTER SIGMA
-"*T": "Τ"  # GREEK CAPITAL LETTER TAU
-"*U": "Θ"  # GREEK CAPITAL LETTER THETA
-"*V": "Ω"  # GREEK CAPITAL LETTER OMEGA
-"*X": "Χ"  # GREEK CAPITAL LETTER CHI
-"*Y": "Υ"  # GREEK CAPITAL LETTER UPSILON
-"*Z": "Ζ"  # GREEK CAPITAL LETTER ZETA
-"*.p": "ϖ"  # GREEK PI SYMBOL
-"*.w": "ϝ"  # GREEK SMALL LETTER DIGAMMA
-"*.W": "Ϝ"  # GREEK CAPITAL LETTER DIGAMMA
-"*Q": "Ϟ"  # GREEK LETTER QOPPA
-"*q": "ϟ"  # GREEK SMALL LETTER QOPPA
-"*.Q": "Ϙ"  # GREEK LETTER ARCHAIC QOPPA
-"*.q": "ϙ"  # GREEK SMALL LETTER ARCHAIC QOPPA
-"*&": "ϗ"  # GREEK KAI SYMBOL
-"*.Z": "Ϡ"  # GREEK LETTER SAMPI
-"*.z": "ϡ"  # GREEK SMALL LETTER SAMPI
-"*..Z": "Ͳ"  # GREEK CAPITAL LETTER ARCHAIC SAMPI
-"*..z": "ͳ"  # GREEK SMALL LETTER ARCHAIC SAMPI
-"*?": "Ϛ"  # GREEK LETTER STIGMA
-"*/": "ϛ"  # GREEK SMALL LETTER STIGMA
-"*'": "ʹ"  # MODIFIER LETTER PRIME, canonically equivalent to U0374 GREEK NUMERAL SIGN
-"*.'": "′"  # PRIME
-"*.\"": "″"  # DOUBLE PRIME
-"*,": "͵"  # GREEK LOWER NUMERAL SIGN (for thousands)
-"*.b": "ϐ"  # GREEK BETA SYMBOL
-"*.u": "ϑ"  # GREEK THETA SYMBOL
-"*.Y": "ϒ"  # GREEK UPSILON WITH HOOK SYMBOL
-"*.f": "ϕ"  # GREEK PHI SYMBOL
-"*.k": "ϰ"  # GREEK KAPPA SYMBOL
-"*.r": "ϱ"  # GREEK RHO SYMBOL
-"*.U": "ϴ"  # GREEK CAPITAL THETA SYMBOL
-"*.e": "ϵ"  # GREEK LUNATE EPSILON SYMBOL
-"*.s": "ϻ"  # GREEK SMALL LETTER SAN
-"*.S": "Ϻ"  # GREEK CAPITAL LETTER SAN
 "13": "⅓"  # VULGAR FRACTION ONE THIRD
 "23": "⅔"  # VULGAR FRACTION TWO THIRDS
 "15": "⅕"  # VULGAR FRACTION ONE FIFTH
@@ -590,8 +507,8 @@
 "med": "☤"  # CADEUCEUS
 "iwit": "👁️‍🗨️"
 "1med": "⚕"  # STAFF OF AESCULAPIUS
-"o-+": "♀"  # FEMALE SIGN
-"o->": "♂"  # MALE SIGN
+"fem": "♀"  # FEMALE SIGN
+"masc": "♂"  # MALE SIGN
 "gay": "⚣"  # DOUBLED MALE SIGN
 "lesbian": "⚢"  # DOUBLED FEMALE SIGN
 "hetero": "⚤"  # INTERLOCKED FEMALE AND MALE SIGN
@@ -779,7 +696,7 @@
 "saturn": "♄"  # SATURN (Saturday)
 "uranus": "♅"  # URANUS (or ⛢ U26E2?)
 "neptune": "♆"  # NEPTUNE
-"pluto": "♇"  # PLUTO (ok, it isn't a planet anymore, but we still love it.)
+"pluto": "♇"  # PLUTO (planet)
 "ceres": "⚳"  # CERES
 "pallas": "⚴"  # PALLAS
 "juno": "⚵"  # JUNO
@@ -850,7 +767,7 @@
 "(12:30)": "🕧"  # CLOCK FACE TWELVE-THIRTY
 "B|": "₿"  # BITCOIN SIGN
 
-# custom
+# fast german
 "ae": "ä"
 "oe": "ö"
 "ue": "ü"
@@ -859,3 +776,53 @@
 "UE": "Ü"
 "ss": "ß"
 "SS": "ẞ"
+
+# greek
+"gA": "Α"
+"ga": "α"
+"gB": "Β"
+"gb": "β"
+"gD": "Δ"
+"gd": "δ"
+"gE": "Ε"
+"ge": "ε"
+"gF": "Φ"
+"gf": "φ"
+"gG": "Γ"
+"gg": "γ"
+"gH": "Η"
+"gh": "η"
+"gI": "Ι"
+"gi": "ι"
+"gJ": "Θ"
+"gj": "θ"
+"gK": "Κ"
+"gk": "κ"
+"gL": "Λ"
+"gl": "λ"
+"gM": "Μ"
+"gm": "μ"
+"gN": "Ν"
+"gn": "ν"
+"gO": "Ο"
+"go": "ο"
+"gP": "Π"
+"gp": "π"
+"gQ": "Χ"
+"gq": "χ"
+"gR": "Ρ"
+"gr": "ρ"
+"gS": "Σ"
+"gs": "σ"
+"gT": "Τ"
+"gt": "τ"
+"gU": "Υ"
+"gu": "υ"
+"gW": "Ω"
+"gw": "ω"
+"gX": "Ξ"
+"gx": "ξ"
+"gY": "Ψ"
+"gy": "ψ"
+"gZ": "Ζ"
+"gz": "ζ"
