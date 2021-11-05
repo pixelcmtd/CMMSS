@@ -20,7 +20,7 @@ crispy-doom
 ctags
 cvs
 cvs-fast-export
-dart
+dart-lang/dart/dart
 dav1d
 dbus
 deno
@@ -236,5 +236,4 @@ homebrew/cask/utm
 homebrew/cask/vlc
 homebrew/cask/vscodium
 homebrew/cask/waterfox
-wine-staging
 homebrew/cask/xquartz
