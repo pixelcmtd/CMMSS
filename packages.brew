@@ -79,7 +79,7 @@ jasper
 jemalloc
 jq
 json-c
-kak-lsp
+kak-lsp/kak-lsp/kak-lsp
 kakoune
 lame
 lcov
@@ -202,7 +202,7 @@ homebrew/cask/blackhole-2ch
 homebrew/cask/brave-browser
 homebrew/cask/cheatsheet
 homebrew/cask/chromium
-craftos-pc
+mcjack123/homebrew-craftospc/craftos-pc
 homebrew/cask/discord
 homebrew/cask/docker
 homebrew/cask/eclipse-java
