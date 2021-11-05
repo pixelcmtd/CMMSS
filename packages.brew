@@ -183,7 +183,7 @@ webp
 wget
 wireshark
 xapian
-xcnotary
+akeru-inc/tap/xcnotary
 xz
 yarn
 yash
