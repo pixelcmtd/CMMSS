@@ -1,4 +1,5 @@
 #!/bin/sh
+set -uxe
 mkdir -p ~/.bin
 
 export PATH="$PATH:/opt/local/bin:/opt/homebrew/bin:/usr/local/bin"
@@ -16,6 +17,7 @@ command -v brew >/dev/null || netsh -f install.sh gh://Homebrew/install
 command -v port >/dev/null || netpkg "$MACPORTS"
 
 brew install $(cat packages.brew)
+mas install $(cat packages.mas | cut -d' ' -f1)
 sudo port install $(cat packages.port)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
