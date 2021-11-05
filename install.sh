@@ -10,7 +10,7 @@ netpkg() {
         rm -f "$TMP"
 }
 
-MACPORTS='https://distfiles.macports.org/MacPorts/MacPorts-2.6.4_1-11-BigSur.pkg'
+MACPORTS='https://github.com/macports/macports-base/releases/download/v2.7.1/MacPorts-2.7.1-12-Monterey.pkg'
 
 command -v brew >/dev/null || netsh -f install.sh gh://Homebrew/install
 command -v port >/dev/null || netpkg "$MACPORTS"
