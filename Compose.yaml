@@ -33,12 +33,6 @@
 " \"": " “"  # space followed by LEFT DOUBLE QUOTATION MARK
 "\" ": "” "  # RIGHT DOUBLE QUOTATION MARK followed by space
 " '": " ‘"  # space followed by LEFT SINGLE QUOTATION MARK
-"nt": "n’t "  # Apostrophized English “not.”
-" t": " the "
-" T": "  The "
-" a": " and "
-"im": " I’m "
-"ve": "’ve "
 ",@": "⸲"  # TURNED COMMA
 ".^": "⸳"  # RAISED DOT
 ".~": "⸳"  # RAISED DOT
@@ -78,78 +72,15 @@
 "=.=": "⸎"  # EDITORIAL CORONIS
 "palm": "⸙"  # PALM BRANCH
 "branch": "⸙"  # PALM BRANCH
-"ff": "ﬀ"  # LATIN SMALL LIGATURE FF
-"fi": "ﬁ"  # LATIN SMALL LIGATURE FI
-"Fi": "ﬃ"  # LATIN SMALL LIGATURE FFI
-"fl": "ﬂ"  # LATIN SMALL LIGATURE FL
-"Fl": "ﬄ"  # LATIN SMALL LIGATURE FFL
-"st": "ﬆ"  # LATIN SMALL LIGATURE ST
-"ft": "ﬅ"  # LATIN SMALL LIGATURE LONG S T
-"ſt": "ﬅ"  # LATIN SMALL LIGATURE LONG S T
-"SS": "ẞ"  # LATIN CAPITAL LETTER SHARP S
-"F<": "ꟻ"  # LATIN EPIGRAPHIC LETTER REVERSED F
-"P<": "ꟼ"  # LATIN EPIGRAPHIC LETTER REVERSED P
-"FF": "Ⅎ"  # TURNED CAPITAL F
-"Ff": "ⅎ"  # TURNED SMALL F
-"MW": "ꟽ"  # LATIN EPIGRAPHIC LETTER INVERTED M
-"MM": "Ɯ"  # LATIN CAPITAL LETTER TURNED M
-"I|": "ꟾ"  # LATIN EPIGRAPHIC LETTER I LONGA
-"M/": "ꟿ"  # LATIN EPIGRAPHIC LETTER ARCHAIC M
-"22": "↊"  # TURNED DIGIT TWO
-"33": "↋"  # TURNED DIGIT THREE
-"E<": "Ǝ"  # LATIN CAPITAL LETTER REVERSED E
-"e<": "ɘ"  # LATIN SMALL LETTER REVERSED E
-"A<": "Ɐ"  # LATIN CAPITAL LETTER TURNED A
-"o&o": "ꝏ"  # LATIN SMALL LETTER OO
-"O&O": "Ꝏ"  # LATIN CAPITAL LETTER OO
-"2o": "ꝏ"  # LATIN SMALL LETTER OO
-"2O": "Ꝏ"  # LATIN CAPITAL LETTER OO
-"A&A": "Ꜳ"  # LATIN CAPITAL LETTER AA
-"a&a": "ꜳ"  # LATIN SMALL LETTER AA
-"2A": "Ꜳ"  # LATIN CAPITAL LETTER AA
-"2a": "ꜳ"  # LATIN SMALL LETTER AA
-"A&O": "Ꜵ"  # LATIN CAPITAL LETTER AO
-"a&o": "ꜵ"  # LATIN SMALL LETTER AO
-"A&U": "Ꜷ"  # LATIN CAPITAL LETTER AU
-"a&u": "ꜷ"  # LATIN SMALL LETTER AU
-"A&V": "Ꜹ"  # LATIN CAPITAL LETTER AV
-"a&v": "ꜹ"  # LATIN SMALL LETTER AV
-"A&Y": "Ꜽ"  # LATIN CAPITAL LETTER AY
-"a&y": "ꜽ"  # LATIN SMALL LETTER AY
-"/&L": "Ꝇ"  # LATIN CAPITAL LETTER BROKEN L
-"/&l": "ꝇ"  # LATIN SMALL LETTER BROKEN L
-"Z.": "Ꝫ"  # LATIN CAPITAL LETTER ET
-"z.": "ꝫ"  # LATIN SMALL LETTER ET
-"V&Y": "Ꝡ"  # LATIN CAPITAL LETTER VY
-"v&y": "ꝡ"  # LATIN SMALL LETTER VY
-"CZ": "Ꝣ"  # LATIN CAPITAL LETTER VISIGOTHIC Z
-"cz": "ꝣ"  # LATIN SMALL LETTER VISIGOTHIC Z
-"L&L": "Ỻ"  # LATIN CAPITAL LETTER MIDDLE-WELSH LL
-"l&l": "ỻ"  # LATIN SMALL LETTER MIDDLE-WELSH LL
-"V&V": "Ỽ"  # LATIN CAPITAL LETTER MIDDLE-WELSH V
-"v&v": "ỽ"  # LATIN SMALL LETTER MIDDLE-WELSH V
-"d&b": "ȸ"  # LATIN SMALL LETTER DB DIGRAPH
-"q&p": "ȹ"  # LATIN SMALL LETTER QP DIGRAPH
-"wy": "ƿ"  # LATIN LETTER WYNN
-"WY": "Ƿ"  # LATIN CAPITAL LETTER WYNN
-"OU": "Ȣ"  # LATIN CAPITAL LETTER OU
-"ou": "ȣ"  # LATIN SMALL LETTER OU
-"yr": "Ʀ"  # LATIN LETTER YR
-"ro": "ꝛ"  # LATIN SMALL LETTER R ROTUNDA
-"r0": "ꝛ"  # LATIN SMALL LETTER R ROTUNDA
-"RO": "Ꝛ"  # LATIN CAPITAL LETTER R ROTUNDA
-"R0": "Ꝛ"  # LATIN CAPITAL LETTER R ROTUNDA
 "!=": "≠"  # NOT EQUAL TO
 "/=": "≠"  # NOT EQUAL TO
 "<=": "≤"  # LESS-THAN OR EQUAL TO
 ">=": "≥"  # GREATER-THAN OR EQUAL TO
 "!<>": "≸"  # NEITHER LESS-THAN NOR GREATER-THAN
-"+<": "≪"  # MUCH LESS-THAN
-"+>": "≫"  # MUCH GREATER-THAN
-"++<": "⋘"  # VERY MUCH LESS-THAN
-"++>": "⋙"  # VERY MUCH GREATER-THAN
-"3>": "⋙"  # VERY MUCH GREATER-THAN
-"3<": "⋘"  # VERY MUCH LESS-THAN
+"<<": "≪"  # MUCH LESS-THAN
+">>": "≫"  # MUCH GREATER-THAN
+"<<<": "⋘"  # VERY MUCH LESS-THAN
+">>>": "⋙"  # VERY MUCH GREATER-THAN
 "in": "∈"  # ELEMENT OF
 "!in": "∉"  # NOT AN ELEMENT OF
 "ni": "∋"  # CONTAINS AS MEMBER
@@ -162,16 +93,15 @@
 ":=": "≔"  # COLON EQUALS
 "=:": "≕"  # EQUALS COLON
 "2=": "⩵"  # TWO CONSECUTIVE EQUALS SIGNS
-"=&=": "⩵"  # TWO CONSECUTIVE EQUALS SIGNS
 "3=": "⩶"  # THREE CONSECUTIVE EQUALS SIGNS
 "=|=": "≢"  # NOT IDENTICAL TO
 "-+": "∓"  # MINUS OR PLUS SIGN
 "sq": "√"  # SQUARE ROOT
 "3sq": "∛"  # CUBE ROOT
 "4sq": "∜"  # FOURTH ROOT
-"/\\": "∧"  # LOGICAL AND
-"\\/": "∨"  # LOGICAL OR
-"\\_/": "⊻"  # XOR
+"land": "∧"  # LOGICAL AND
+"lor": "∨"  # LOGICAL OR
+"xor": "⊻"  # XOR
 "-,": "¬"  # NOT SIGN
 "*o": "∘"  # RING OPERATOR (function composition)
 "*x": "⨯"  # CROSS PRODUCT
@@ -231,9 +161,6 @@
 "*..d": "∂"  # PARTIAL DIFFERENTIAL
 "Re": "ℜ"  # BLACK-LETTER CAPITAL R (Real Part)
 "Im": "ℑ"  # BLACK-LETTER CAPTIAL I (Imaginary Part)
-"hbar": "ℏ"  # PLANCK CONSTANT OVER TWO PI
-"h-": "ℏ"  # PLANCK CONSTANT OVER TWO PI
-"hp": "ℎ"  # PLANCK CONSTANT
 "exp": "ℯ"  # SCRIPT SMALL E
 "e10": "⏨"  # DECIMAL EXPONENT SYMBOL
 "wp": "℘"  # SCRIPT CAPITAL P
@@ -274,10 +201,8 @@
 "%)": "⧙"  # RIGHT WIGGLY FENCE
 "2%(": "⧚"  # LEFT DOUBLE WIGGLY FENCE
 "2%)": "⧛"  # RIGHT DOUBLE WIGGLY FENCE
-"(&(": "⸨"  # LEFT DOUBLE PARENTHESIS
-")&)": "⸩"  # RIGHT DOUBLE PARENTHESIS
-"2(": "⸨"  # LEFT DOUBLE PARENTHESIS
-"2)": "⸩"  # RIGHT DOUBLE PARENTHESIS
+"((": "⸨"  # LEFT DOUBLE PARENTHESIS
+"))": "⸩"  # RIGHT DOUBLE PARENTHESIS
 "Z(": "༼"  # TIBETAN MARK ANG KHANG GYON
 "Z)": "༽"  # TIBETAN MARK ANG KHANG GYAS
 "L[": "⌊"  # LEFT FLOOR
@@ -354,49 +279,22 @@
 "1x": "⅒"  # VULGAR FRACTION ONE TENTH
 "03": "↉"  # VULGAR FRACTION ZERO THIRDS
 "1/": "⅟"  # FRACTION NUMERATOR ONE
-"%1": "ⅰ"  # SMALL ROMAN NUMERAL ONE
-"%2": "ⅱ"  # SMALL ROMAN NUMERAL TWO
-"%3": "ⅲ"  # SMALL ROMAN NUMERAL THREE
-"%4": "ⅳ"  # SMALL ROMAN NUMERAL FOUR
-"%5": "ⅴ"  # SMALL ROMAN NUMERAL FIVE
-"%6": "ⅵ"  # SMALL ROMAN NUMERAL SIX
-"%7": "ⅶ"  # SMALL ROMAN NUMERAL SEVEN
-"%8": "ⅷ"  # SMALL ROMAN NUMERAL EIGHT
-"%9": "ⅸ"  # SMALL ROMAN NUMERAL NINE
-"%x": "ⅹ"  # SMALL ROMAN NUMERAL TEN
-"%_1": "ⅺ"  # SMALL ROMAN NUMERAL ELEVEN
-"%_2": "ⅻ"  # SMALL ROMAN NUMERAL TWELVE
-"%l": "ⅼ"  # SMALL ROMAN NUMERAL FIFTY
-"%c": "ⅽ"  # SMALL ROMAN NUMERAL ONE HUNDRED
-"%d": "ⅾ"  # SMALL ROMAN NUMERAL FIVE HUNDRED
-"%m": "ⅿ"  # SMALL ROMAN NUMERAL ONE THOUSAND
-"%01": "Ⅰ"  # ROMAN NUMERAL ONE
-"%02": "Ⅱ"  # ROMAN NUMERAL TWO
-"%03": "Ⅲ"  # ROMAN NUMERAL THREE
-"%04": "Ⅳ"  # ROMAN NUMERAL FOUR
-"%05": "Ⅴ"  # ROMAN NUMERAL FIVE
-"%06": "Ⅵ"  # ROMAN NUMERAL SIX
-"%07": "Ⅶ"  # ROMAN NUMERAL SEVEN
-"%08": "Ⅷ"  # ROMAN NUMERAL EIGHT
-"%09": "Ⅸ"  # ROMAN NUMERAL NINE
-"%0x": "Ⅹ"  # ROMAN NUMERAL TEN
-"%_01": "Ⅺ"  # ROMAN NUMERAL ELEVEN
-"%_02": "Ⅻ"  # ROMAN NUMERAL TWELVE
-"%0l": "Ⅼ"  # ROMAN NUMERAL FIFTY
-"%0c": "Ⅽ"  # ROMAN NUMERAL ONE HUNDRED
-"%0d": "Ⅾ"  # ROMAN NUMERAL FIVE HUNDRED
-"%0m": "Ⅿ"  # ROMAN NUMERAL ONE THOUSAND
-"%X": "Ⅹ"  # ROMAN NUMERAL TEN
-"%L": "Ⅼ"  # ROMAN NUMERAL FIFTY
-"%C": "Ⅽ"  # ROMAN NUMERAL ONE HUNDRED
-"%<C": "Ↄ"  # ROMAN NUMERAL REVERSED ONE HUNDRED
-"%D": "Ⅾ"  # ROMAN NUMERAL FIVE HUNDRED
-"%M": "Ⅿ"  # ROMAN NUMERAL ONE THOUSAND
-"%0CD": "ↀ"  # ROMAN NUMERAL ONE THOUSAND C D
-"%0D": "ↁ"  # ROMAN NUMERAL FIVE THOUSAND
-"%0M": "ↂ"  # ROMAN NUMERAL TEN THOUSAND
-"%00D": "ↇ"  # ROMAN NUMERAL FIFTY THOUSAND
-"%00M": "ↈ"  # ROMAN NUMERAL ONE HUNDRED THOUSAND
+"%1": "Ⅰ"  # ROMAN NUMERAL ONE
+"%2": "Ⅱ"  # ROMAN NUMERAL TWO
+"%3": "Ⅲ"  # ROMAN NUMERAL THREE
+"%4": "Ⅳ"  # ROMAN NUMERAL FOUR
+"%5": "Ⅴ"  # ROMAN NUMERAL FIVE
+"%6": "Ⅵ"  # ROMAN NUMERAL SIX
+"%7": "Ⅶ"  # ROMAN NUMERAL SEVEN
+"%8": "Ⅷ"  # ROMAN NUMERAL EIGHT
+"%9": "Ⅸ"  # ROMAN NUMERAL NINE
+"%x": "Ⅹ"  # ROMAN NUMERAL TEN
+"%_1": "Ⅺ"  # ROMAN NUMERAL ELEVEN
+"%_2": "Ⅻ"  # ROMAN NUMERAL TWELVE
+"%l": "Ⅼ"  # ROMAN NUMERAL FIFTY
+"%c": "Ⅽ"  # ROMAN NUMERAL ONE HUNDRED
+"%d": "Ⅾ"  # ROMAN NUMERAL FIVE HUNDRED
+"%m": "Ⅿ"  # ROMAN NUMERAL ONE THOUSAND
 "(:": "☻"  # BLACK SMILING FACE
 ":)": "☺"  # WHITE SMILING FACE
 ":(": "☹"  # WHITE FROWNING FACE
@@ -516,15 +414,10 @@
 "genderq": "⚧"  # MALE WITH STROKE AND MALE AND FEMALE SIGN
 "OX": "☠"  # SKULL AND CROSSBONES
 "death": "☠"  # SKULL AND CROSSBONES
-"Xbones": "☠"  # SKULL AND CROSSBONES
 "kbd": "⌨"  # KEYBOARD
-"rhand": "☞"  # WHITE RIGHT POINTING INDEX
-"lhand": "☜"  # WHITE LEFT POINTING INDEX
 "**": "★"  # BLACK STAR
 "*0": "☆"  # WHITE STAR
 "*-": "✪"  # CIRCLED WHITE STAR
-"*3": "⁂"  # ASTERISM
-"3*": "⁂"  # ASTERISM
 "2*": "⁑"  # TWO ASTERISKS ALIGNED VERTICALLY
 "*4": "✢"  # FOUR TEARDROP-SPOKED ASTERISK
 "*6": "✡"  # STAR OF DAVID
@@ -603,13 +496,6 @@
 "\\_|": "̩"  # COMBINING VERTICAL LINE BELOW
 "rr": "ɹ"  # LATIN SMALL LETTER TURNED R: voiced alveolar approximant (American English (at least) R)
 "rd": "ɾ"  # LATIN SMALL LETTER R WITH FISHHOOK: voiced alveolar flap or tap (American English intervocalic allophone of d, or Spanish r)
-"vv": "ʌ"  # LATIN SMALL LETTER TURNED V
-"ui": "ɯ"  # LATIN SMALL LETTER TURNED M
-"ww": "ʍ"  # LATIN SMALL LETTER TURNED W
-"yy": "ʎ"  # LATIN SMALL LETTER TURNED Y
-"aa": "ɐ"  # LATIN SMALL LETTER TURNED A
-"hh": "ɥ"  # LATIN SMALL LETTER TURNED H
-"j.": "ȷ"  # LATIN SMALL LETTER DOTLESS J
 "!.": "Ꞌ"  # LATIN CAPITAL LETTER SALTILLO
 "!_.": "ꞌ"  # LATIN SMALL LETTER SALTILLO
 "WW": "ʬ"  # LATIN LETTER BILABIAL PERCUSSIVE
@@ -617,19 +503,6 @@
 "gh": "ɣ"  # LATIN SMALL LETTER GAMMA
 "ogh": "ɤ"  # LATIN SMALL LETTER RAMS HORN
 "ain": "ᴥ"  # LATIN LETTER AIN
-"d,": "ɖ"  # LATIN SMALL LETTER D WITH TAIL
-"l,": "ɭ"  # LATIN SMALL LETTER L WITH RETROFLEX HOOK
-"n,": "ɳ"  # LATIN SMALL LETTER N WITH RETROFLEX HOOK
-"s,": "ʂ"  # LATIN SMALL LETTER S WITH HOOK
-"t,": "ʈ"  # LATIN SMALL LETTER T WITH RETROFLEX HOOK
-"z,": "ʐ"  # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
-"f,": "ƒ"  # LATIN SMALL LETTER F WITH HOOK
-"b'": "ɓ"  # LATIN SMALL LETTER B WITH HOOK
-"d'": "ɗ"  # LATIN SMALL LETTER D WITH HOOK
-"g'": "ɠ"  # LATIN SMALL LETTER G WITH HOOK
-"gg": "ɡ"  # LATIN SMALL LETTER SCRIPT G
-"h'": "ɦ"  # LATIN SMALL LETTER H WITH HOOK
-"G'": "ʛ"  # LATIN LETTER SMALL CAPITAL G WITH HOOK
 "No": "№"  # NUMERO SIGN
 "Rx": "℞"  # PRESCRIPTION TAKE
 "Per": "⅌"  # PER SIGN
@@ -727,7 +600,7 @@
 "bomb": "💣"  # BOMB
 "zzz": "💤"  # SLEEPING SYMBOL
 "pow": "💥"  # COLLISION SYMBOL
-"sweat": "💦"  # SPLASHING SWEAT SYMBOL
+"cum": "💦"  # SPLASHING SWEAT SYMBOL
 "drop": "💧"  # DROPLET
 "zip": "💨"  # DASH SYMBOL
 "poo": "💩"  # PILE OF POO
