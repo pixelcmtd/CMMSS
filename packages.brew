@@ -194,7 +194,7 @@ youtube-dl
 yubico-piv-tool
 zig
 zsh
-homebrew/cask/adoptopenjdk
+homebrew/cask/temurin
 homebrew/cask/altserver
 homebrew/cask/balenaetcher
 homebrew/cask/basictex
