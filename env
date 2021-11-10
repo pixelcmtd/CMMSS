@@ -18,7 +18,6 @@ export PATH="$HOME/.rvm/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/Library/Python/3.10/bin"
 export PATH="$PATH:$HOME/Library/Python/3.9/bin"
-export PATH="$PATH:$HOME/Library/Python/3.9/bin"
 export PATH="$PATH:$HOME/Library/Python/3.8/bin"
 export PATH="$PATH:$HOME/Library/Python/2.7/bin"
 export PATH="$PATH:$HOME/vcpkg"
@@ -32,15 +31,18 @@ export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/opt/local/bin"
 export PATH="$PATH:$HOME/fvm/versions/stable/bin"
 export PATH="$PATH:$HOME/tldrgal"
+export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/perl5/bin"
 
-for d in /Applications/* ; do
-        export PATH="$PATH:$d/Contents/MacOS"
+export PATH="$PATH$(
+for d in /Applications/*/Contents/MacOS /System/Library/PrivateFrameworks/*/Versions/Current/Resources ; do
+        echo -n ":$d"
 done
+)"
 
 export MACOSX_DEPLOYMENT_TARGET=12.0
 export CC=clang
-export CFLAGS="-Ofast -mcpu=native -mtune=native -I/opt/homebrew/include -Wall -Wextra"
+export CFLAGS="-O3 -mcpu=native -mtune=native -I/opt/homebrew/include -Wall -Wextra"
 export CXX=clang++
 export CXXFLAGS="$CFLAGS"
 export LD=$CC
