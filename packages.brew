@@ -181,7 +181,6 @@ wasmer
 watch
 webp
 wget
-wireshark
 xapian
 akeru-inc/tap/xcnotary
 xz
@@ -236,4 +235,5 @@ homebrew/cask/utm
 homebrew/cask/vlc
 homebrew/cask/vscodium
 homebrew/cask/waterfox
+homebrew/cask/wireshark
 homebrew/cask/xquartz
