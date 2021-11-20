@@ -62,7 +62,8 @@
 "-^": "↑"  # UPWARDS ARROW
 "->": "→"  # RIGHTWARDS ARROW
 "-v": "↓"  # DOWNWARDS ARROW
-"<->": "↔"  # LEFT RIGHT ARROW (kragen's)
+"|->": "↦" # RIGHTWARDS ARROW FROM BAR (\mapsto)
+"<->": "↔"  # LEFT RIGHT ARROW
 "zz>": "↯"  # DOWNWARDS ZIGZAG ARROW
 "fv": "✌"  # VICTORY HAND
 "fw": "✍"  # WRITING HAND
@@ -309,8 +310,7 @@
 "o3": "߷"  # NKO SYMBOL GBAKURUNEN
 "!?": "‽"  # INTERROBANG
 "?!": "⸘"  # INVERTED INTERROBANG, standard now.
-"¿¡": "⸘"  # INVERTED INTERROBANG (if you have a ¡ key.  Otherwise...? "?i" maybe?
-"¡¿": "⸘"  # INVERTED INTERROBANG (if you have a ¡ key.  Otherwise...? "?i" maybe?
+"??": "¿"  # INVERTED QUESTION MARK
 "?<": "⸮"  # REVERSED QUESTION MARK
 "?&?": "⁇"  # DOUBLE QUESTION MARK
 "2?": "⁇"  # DOUBLE QUESTION MARK
@@ -412,6 +412,8 @@
 "hetero": "⚤"  # INTERLOCKED FEMALE AND MALE SIGN
 "trans": "⚥"  # MALE AND FEMALE SIGN
 "genderq": "⚧"  # MALE WITH STROKE AND MALE AND FEMALE SIGN
+"pride": "🏳️‍🌈" # GENERAL PRIDE (RAINBOW) FLAG
+"tpride": "🏳️‍⚧️" # TRANSGENDER PRIDE FLAG
 "OX": "☠"  # SKULL AND CROSSBONES
 "death": "☠"  # SKULL AND CROSSBONES
 "kbd": "⌨"  # KEYBOARD
