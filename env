@@ -1,5 +1,5 @@
 export LANG=C
-export EDITOR=vim
+export EDITOR=nvim
 export VISUAL=$EDITOR
 export VEDITOR=$EDITOR
 export PAGER=less
@@ -7,8 +7,8 @@ export TERM=xterm-256color
 export OPENER=open
 export LS_COLORS=
 
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/ccache/libexec:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
@@ -24,7 +24,6 @@ export PATH="$PATH:$HOME/vcpkg"
 export PATH="$PATH:$HOME/flutter/bin"
 export PATH="$PATH:$HOME/.wasmer/bin"
 export PATH="$PATH:$HOME/.wasmer/globals/wapm_packages/.bin"
-export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
 export PATH="$PATH:/Applications/CraftOS-PC.app/Contents/MacOS"
 export PATH="$PATH:$HOME/.emacs.d/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
@@ -33,20 +32,21 @@ export PATH="$PATH:$HOME/fvm/versions/stable/bin"
 export PATH="$PATH:$HOME/tldrgal"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/perl5/bin"
+export PATH="$PATH:$HOME/.cabal/bin"
 
 export PATH="$PATH$(
-for d in /Applications/*/Contents/MacOS /System/Library/PrivateFrameworks/*/Versions/Current/Resources ; do
+for d in /Applications/*/Contents/MacOS $HOME/JUCE/Projucer.app/Contents/MacOS /System/Library/PrivateFrameworks/*/Versions/Current/Resources $HOME/.gem/ruby/*/bin /opt/homebrew/lib/ruby/gems/*/bin ; do
         echo -n ":$d"
 done
 )"
 
 export MACOSX_DEPLOYMENT_TARGET=12.0
 export CC=clang
-export CFLAGS="-O3 -mcpu=native -mtune=native -I/opt/homebrew/include -Wall -Wextra"
+export CFLAGS="-O3 -mcpu=native -mtune=native -I/opt/homebrew/include -I/opt/homebrew/opt/llvm/include -Wall -Wextra"
 export CXX=clang++
 export CXXFLAGS="$CFLAGS"
 export LD=$CC
-export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -flto"
+export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -L/opt/homebrew/opt/llvm/lib -flto"
 
 export PREFIX="$HOME/.local"
 
