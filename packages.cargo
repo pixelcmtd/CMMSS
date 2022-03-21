@@ -1,6 +1,8 @@
+cargo-edit
 cargo-update
 dutree
 fd-find
 just
 rustcat
+tealdeer
 tokei
