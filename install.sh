@@ -17,7 +17,8 @@ command -v brew >/dev/null || netsh -f install.sh gh://Homebrew/install
 command -v port >/dev/null || netpkg "$MACPORTS"
 
 brew install $(cat packages.brew)
-mas install $(cat packages.mas | cut -d' ' -f1)
+rustup toolchain install nightly
+mas install $(cat packages.mas)
 sudo port install $(cat packages.port)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
@@ -26,8 +27,10 @@ cargo install $(cat packages.cargo)
 # configuration
 #
 
+mkdir -p "$HOME/.config/nvim"
 cp -f zshrc "$HOME/.zshrc"
 cp -f zshtheme "$HOME/.zshtheme"
 cp -f vimrc "$HOME/.vimrc"
+cp -f init.vim "$HOME/.config/nvim/init.vim"
 cp -f editorconfig "$HOME/.editorconfig"
 cp -f env "$HOME/.env"
