@@ -1,10 +1,10 @@
 #!/bin/sh
 set -ue
 
-xcode-select --install
+xcode-select --install && \
 read -p 'A window that lets you install XCode CLI tools should have opened.
 If you'\''ve closed it, run `xcode-select --install` to reopen it.
-Please install the XCode CLI tools and then press enter.' quark1
+Please install the XCode CLI tools and then press enter.' quark1 || true
 
 [ `arch` = arm64 ] && {
         echo "Detected an ARM CPU, installing Rosetta..."
