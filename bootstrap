@@ -1,6 +1,9 @@
 #!/bin/sh
 set -ue
 
+read -p 'To improve your experience, we will assume that you agree to all Apple SLAs.
+To agree, press enter. To disagree, press ctrl-c.' quark2
+
 xcode-select --install && \
 read -p 'A window that lets you install XCode CLI tools should have opened.
 If you'\''ve closed it, run `xcode-select --install` to reopen it.
@@ -8,14 +11,10 @@ Please install the XCode CLI tools and then press enter.' quark1 || true
 
 [ `arch` = arm64 ] && {
         echo "Detected an ARM CPU, installing Rosetta..."
-        sudo softwareupdate --install-rosetta
-        read -p 'A window that lets you install Rosetta should have opened.
-If you'\''ve closed it, run `sudo softwareupdate --install-rosetta` to reopen it.
-Please install the Rosetta and then press enter.' quark2
+        echo A | sudo softwareupdate --install-rosetta
 }
 
-echo "You need to agree to the XCode license first."
-sudo xcodebuild -license
+echo '                                         agree' | sudo xcodebuild -license
 
 echo "Installing pixelcmtd/tools..."
 curl -L https://github.com/pixelcmtd/tools/raw/master/bootstrap | sh
