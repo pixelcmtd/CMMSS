@@ -11,8 +11,8 @@ tab_width = 8
 [Makefile]
 indent_style = tab
 
-[*.{cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad}]
+[*.{cl,lisp,clj,scm,adscript,carp,dart,yml,yaml,scad,dot}]
 tab_width = 2
 
-[*.{htm,html,css,js,ts,py,rs}]
+[*.{htm,html,css,js,ts,py,rs,hs,swift}]
 tab_width = 4
