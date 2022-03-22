@@ -182,22 +182,22 @@ alias -g ......='../../../../..'
 alias l='ls --color=auto -lFah'
 alias ll='ls --color=auto -lh'
 alias la='ls --color=auto -lAFh'
-alias ls='ls --color=auto -G'
+alias ls='ls --color=auto'
 
 alias grep="grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn"
 
 alias e64=encode64
 alias d64=decode64
 
-alias zsh-theme="$VEDITOR $HOME/.zsh-theme"
+alias zshtheme="$VEDITOR $HOME/.zshtheme"
 alias zshrc="$VEDITOR $HOME/.zshrc"
 alias vimrc="$VISUAL $HOME/.vimrc"
-alias help='man'
+alias help=man
 
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
-alias -g L='| less'
+alias -g L='| moar'
 alias -g NE='2> /dev/null'
 alias -g NUL='> /dev/null 2>&1'
 

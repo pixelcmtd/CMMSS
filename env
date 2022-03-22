@@ -33,6 +33,7 @@ export PATH="$PATH:$HOME/tldrgal"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/perl5/bin"
 export PATH="$PATH:$HOME/.cabal/bin"
+export PATH="$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin"
 
 export PATH="$PATH$(
 for d in /Applications/*/Contents/MacOS $HOME/JUCE/Projucer.app/Contents/MacOS /System/Library/PrivateFrameworks/*/Versions/Current/Resources $HOME/.gem/ruby/*/bin /opt/homebrew/lib/ruby/gems/*/bin ; do
@@ -47,8 +48,9 @@ export CXX=clang++
 export CXXFLAGS="$CFLAGS"
 export LD=$CC
 export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -L/opt/homebrew/opt/llvm/lib -flto"
-
 export PREFIX="$HOME/.local"
+
+export HOMEBREW_NO_ANALYTICS=1
 
 export GPG_TTY=$(tty)
 
