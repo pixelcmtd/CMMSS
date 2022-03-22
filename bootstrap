@@ -14,9 +14,6 @@ Please install the XCode CLI tools and then press enter.' quark1 || true
         echo A | sudo softwareupdate --install-rosetta
 }
 
-echo "You need to agree to the XCode license manually."
-sudo xcodebuild -license
-
 echo "Installing pixelcmtd/tools..."
 curl -L https://github.com/pixelcmtd/tools/raw/master/bootstrap | sh
 
