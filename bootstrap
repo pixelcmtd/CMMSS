@@ -14,6 +14,9 @@ Please install the XCode CLI tools and then press enter.' quark1 || true
         echo A | sudo softwareupdate --install-rosetta
 }
 
+echo "Making sure that /usr/local/bin exists..."
+sudo mkdir -p /usr/local/bin
+
 echo "Installing pixelcmtd/tools..."
 curl -L https://github.com/pixelcmtd/tools/raw/master/bootstrap | sh
 
