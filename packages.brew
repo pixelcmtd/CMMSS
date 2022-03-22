@@ -254,6 +254,6 @@ homebrew/cask/utm
 homebrew/cask/vlc
 homebrew/cask/vscodium
 homebrew/cask/waterfox
-homebrew/cask/wine-staging
+homebrew/cask-versions/wine-staging
 homebrew/cask/wireshark
 homebrew/cask/xquartz
