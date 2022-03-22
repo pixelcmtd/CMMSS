@@ -1,7 +1,7 @@
 #!/bin/sh
 set -ue
 
-read -p 'To improve your experience, we will assume that you agree to all Apple SLAs.
+read -p 'To improve your experience, we will agree to some Apple SLAs for you.
 To agree, press enter. To disagree, press ctrl-c.' quark2
 
 xcode-select --install && \
@@ -14,7 +14,8 @@ Please install the XCode CLI tools and then press enter.' quark1 || true
         echo A | sudo softwareupdate --install-rosetta
 }
 
-echo '                                         agree' | sudo xcodebuild -license
+echo "You need to agree to the XCode license manually."
+sudo xcodebuild -license
 
 echo "Installing pixelcmtd/tools..."
 curl -L https://github.com/pixelcmtd/tools/raw/master/bootstrap | sh
