@@ -1,0 +1,31 @@
+# Disable specific steps (vim is a duplicate of nvim that fails, npm also fails (for weird reasons))
+disable = ["vim", "node"]
+
+# Do not ask to retry failed steps (default: false)
+#no_retry = true
+
+# List of remote machines (this will be **very** fun, e.g. ["dergerät.chrissx.de"])
+#remote_topgrades = ["toothless", "pi", "parnas"]
+
+# Cleanup temporary or old files
+cleanup = true
+
+[git]
+repos = [
+    "~/.emacs.d",
+    "~/linux",
+    "~/Carp",
+    "~/c++std",
+    "~/CMMSS",
+    "~/CAAMO",
+]
+
+# Don't pull the predefined git repos
+pull_predefined = false
+
+[commands]
+"gpncl" = "~/gpncl_copy.sh"
+"Vogelbuch" = "cd ~/vogelbuch && ./get_current_tweets.sh"
+
+[post_commands]
+"Backup" = "~/backup.sh"

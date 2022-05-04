@@ -4,6 +4,7 @@ set -uxe
 # copy configs
 cp -f ~/.env env
 cp -f ~/.editorconfig editorconfig
+cp -f ~/.config/topgrade.toml topgrade.toml
 
 # generate package lists for homebrew and mas
 brew list > packages.brew

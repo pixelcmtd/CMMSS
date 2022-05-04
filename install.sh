@@ -25,6 +25,7 @@ pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
 
 # configuration
-cp -f editorconfig "$HOME/.editorconfig"
-cp -f env "$HOME/.env"
+cp -f editorconfig ~/.editorconfig
+cp -f env ~/.env
+cp -f topgrade.toml ~/.config/topgrade.toml
 curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s vim zsh
