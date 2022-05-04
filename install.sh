@@ -25,14 +25,10 @@ sudo port install $(cat packages.port)
 pip3 install --user $(cat packages.pip3)
 cargo install $(cat packages.cargo)
 
-#
 # configuration
-#
 
-mkdir -p "$HOME/.config/nvim"
 cp -f zshrc "$HOME/.zshrc"
 cp -f zshtheme "$HOME/.zshtheme"
-cp -f vimrc "$HOME/.vimrc"
-cp -f init.vim "$HOME/.config/nvim/init.vim"
 cp -f editorconfig "$HOME/.editorconfig"
 cp -f env "$HOME/.env"
+curl -L https://github.com/pixelcmtd/dotfiles/raw/daddy/install | sh -s vim
