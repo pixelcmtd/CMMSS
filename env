@@ -1,3 +1,4 @@
+#!/bin/sh
 export LANG=C
 export EDITOR=nvim
 export VISUAL=$EDITOR
@@ -52,7 +53,5 @@ export LDFLAGS="$CFLAGS -L/opt/homebrew/lib -L/opt/homebrew/opt/llvm/lib -flto"
 export PREFIX="$HOME/.local"
 
 export HOMEBREW_NO_ANALYTICS=1
-
 export GPG_TTY=$(tty)
-
 export CARP_DIR=~/Carp/

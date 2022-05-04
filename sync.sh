@@ -2,8 +2,6 @@
 set -uxe
 
 # copy configs
-cp -f ~/.zshrc zshrc
-cp -f ~/.zshtheme zshtheme
 cp -f ~/.env env
 cp -f ~/.editorconfig editorconfig
 
