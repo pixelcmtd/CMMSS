@@ -2,12 +2,13 @@ export LANG=C
 export EDITOR=nvim
 export VISUAL=$EDITOR
 export VEDITOR=$EDITOR
-export PAGER=less
+export PAGER=moar
 export TERM=xterm-256color
 export OPENER=open
 export LS_COLORS=
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"

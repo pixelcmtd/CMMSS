@@ -174,7 +174,7 @@ uzip() (unzip -d "$(echo "$1" | sed s/\.zip//g -)" "$1")
 alias m='make -j$(nproc)'
 alias mi='sudo make -j$(nproc) install'
 alias mt='make -j$(nproc) test'
-alias o='open'
+alias o='$OPENER'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -197,7 +197,7 @@ alias help=man
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
-alias -g L='| moar'
+alias -g L='| $PAGER'
 alias -g NE='2> /dev/null'
 alias -g NUL='> /dev/null 2>&1'
 
@@ -220,9 +220,7 @@ alias gs='git status'
 
 alias diff='git diff --no-index'
 
-alias dstat='ifstat -i en0'
-
-alias rr='curl -s -L http://bit.ly/10hA8iC | bash'
+alias rr='curl -sL http://bit.ly/10hA8iC | bash'
 
 alias tmp='pushd ; cd $(mktemp -d)'
 
@@ -232,8 +230,6 @@ alias arm='arch -arch arm64'
 ght() (git tag $@ && git push origin --tags)
 glcp() (git pull && git commit $@ && git push)
 ghcl() (git clone --recurse-submodules -v https://github.com/$1.git $2 $3 $4)
-
-archof() (file $(which $@))
 
 command -v pfetch >/dev/null && pfetch
 
