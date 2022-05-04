@@ -123,7 +123,7 @@
 "/EE": "∄"  # THERE DOES NOT EXIST
 "AA": "∀"  # FOR ALL
 "QED": "∎"  # END OF PROOF
-"88": "∞"  # INFINITY
+"inf": "∞"  # INFINITY
 "aleph": "ℵ"  # ALEF SYMBOL
 "alep0": "ℵ₀"  # ALEF Null
 "alep1": "ℵ₁"  # ALEF One
@@ -701,3 +701,16 @@
 "gy": "ψ"
 "gZ": "Ζ"
 "gz": "ζ"
+"00": "⁰"
+"11": "¹"
+"22": "²"
+"33": "³"
+"44": "⁴"
+"55": "⁵"
+"66": "⁶"
+"77": "⁷"
+"88": "⁸"
+"99": "⁹"
+"ii": "ⁱ"
+"tm": "™"
+"TM": "™"
